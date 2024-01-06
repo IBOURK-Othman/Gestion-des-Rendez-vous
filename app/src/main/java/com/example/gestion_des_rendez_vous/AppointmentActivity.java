@@ -223,11 +223,7 @@ public class AppointmentActivity extends AppCompatActivity {
 
     // Method to suggest choosing another time on the same day
     private void showSuggestAnotherTimeDialog(List<AppointmentClasse> existingAppointments, String selectedTime, String description) {
-        // Implement a dialog or UI to suggest another available time on the same day
-        // You may display the existing appointments and let the user choose from available slots
-        // Example: Display a dialog with a list of available time slots
-        // Handle user selection and call checkTimeSlotAvailability for the chosen time
-        // ...
+        Toast.makeText(AppointmentActivity.this, "Veuillez choisir un autre créneau, cette heure est déjà pris", Toast.LENGTH_SHORT).show();
     }
 
     // Method to increment time by 30 minutes
