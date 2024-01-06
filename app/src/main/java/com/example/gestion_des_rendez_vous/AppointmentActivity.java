@@ -252,7 +252,7 @@ public class AppointmentActivity extends AppCompatActivity {
     // Method to save appointment to Firestore
     private void saveAppointmentToFirestore(String selectedDate, String selectedTime, String description) {
         // Create an instance of the class Appointment with the appointment data
-        AppointmentClasse appointment = new AppointmentClasse(doctorId, "", selectedDate, selectedTime, description);
+        AppointmentClasse appointment = new AppointmentClasse(doctorId, userId, selectedDate, selectedTime, description);
 
         // Add the document to Firestore
         db.collection("appointments")
