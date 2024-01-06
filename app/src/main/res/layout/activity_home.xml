@@ -1,79 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".HomeActivity"
     android:background="@drawable/pagebkg">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_margin="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
 
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:layout_gravity="center"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/bg_button"
-            android:text="Spécialités"
-            android:textSize="18sp"
-            app:cornerRadius="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
 
-        <Button
-            android:id="@+id/btn2"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/white"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:textStyle="bold"
-            android:background="@drawable/bg_button"
-            android:text="medecins "
-            android:textSize="18sp"
-            app:cornerRadius="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:fontFamily="monospace"
+                android:text="Welcome"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
 
-        <Button
-            android:id="@+id/btn3"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:background="@drawable/bg_button"
-            android:text="contactez-nous"
-            android:textSize="18sp"
-            app:cornerRadius="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn2" />
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:text="chargement..."/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Spécialités"
+                android:textSize="25sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_button"
+                app:cornerRadius="10dp"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Médecins"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_button"
+                app:cornerRadius="10dp"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Contactez-nous"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_button"
+                app:cornerRadius="10dp"/>
+
+            <!-- Add Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Logout"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_button"
+                app:cornerRadius="10dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
 
 
 

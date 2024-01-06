@@ -70,6 +70,7 @@ public class SignupActivity extends AppCompatActivity {
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 Toast.makeText( SignupActivity.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
                                                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                                                finish();
                                             }
                                         });
 
