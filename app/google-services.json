@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859194818875",
+    "project_id": "gestion-des-rendez-vous-638f4",
+    "storage_bucket": "gestion-des-rendez-vous-638f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859194818875:android:79200a8d8ca35db432771e",
+        "android_client_info": {
+          "package_name": "com.example.gestion_des_rendez_vous"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2I8LBq4ha-eC6xiHOq1ODOyw9wT_Jd9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
