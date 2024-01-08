@@ -24,6 +24,7 @@
             android:background="@drawable/bg"
             android:editable="false"
             android:hint="@string/date"
+            android:fontFamily="@font/salsa"
             android:paddingStart="30dp"
             android:paddingTop="10dp"
             android:paddingEnd="30dp"
@@ -42,6 +43,7 @@
             android:background="@drawable/bg"
             android:editable="false"
             android:hint="@string/time"
+            android:fontFamily="@font/salsa"
             android:paddingStart="30dp"
             android:paddingTop="10dp"
             android:paddingEnd="30dp"
@@ -59,6 +61,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/bg"
             android:hint="@string/description"
+            android:fontFamily="@font/salsa"
             android:padding="10dp"
             android:paddingStart="30dp"
             android:paddingTop="10dp"
@@ -80,6 +83,7 @@
             android:foreground="?attr/selectableItemBackground"
             android:text="@string/confirm"
             android:textColor="@color/white"
+            android:fontFamily="@font/salsa"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -100,6 +104,7 @@
             android:id="@+id/textViewAppointmentDetails"
             android:layout_width="match_parent"
             android:textColor="@color/lavender"
+            android:fontFamily="@font/salsa"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -131,27 +136,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/baseline_warning_amber_24"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/salsa"
                 android:text="Important"
                 android:textColor="@color/rouge"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textViewCardDateImpo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
                 android:text="Nous sommes à votre disposition du lundi au vendredi, de 9h00 à 12h00 et de 14h00 à 18h00 " />
 
             <TextView
                 android:id="@+id/textViewCardDateInterval"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
                 android:text="Les réservations de rendez-vous à la clinique ne sont disponibles qu'aux heures suivantes:" />
 
             <TextView
                 android:id="@+id/textViewCardRemark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
                 android:text="9:00, 9:30, 10:00, 10:30, 11:00, 11:30, 14:00, 14:30, 15:00, 15:30, 16:00, 16:30, 17:00, 17:30." />
 
         </LinearLayout>

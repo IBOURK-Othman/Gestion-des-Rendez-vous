@@ -37,7 +37,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Contactez-nous"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/barlowcondensedblack"
                         android:textAlignment="center"
                         android:textColor="@color/lavender"
                         android:textSize="35sp"
@@ -55,7 +55,7 @@
                         android:layout_marginTop="32dp"
                         android:drawableLeft="@drawable/baseline_add_location_alt_24"
                         android:text="Adresse :"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/cormorantgaramondregular"
                         android:textStyle="bold"
                         android:textColor="@color/lavender"
                         android:textSize="22sp" />
@@ -65,6 +65,7 @@
                         android:layout_height="wrap_content"
                         android:text="Quartier Takadoum 30 Bloc, Beni Mellal"
                         android:textColor="@color/ciel"
+                        android:fontFamily="@font/salsa"
                         android:textStyle="bold"
                         android:textSize="18sp" />
 
@@ -75,7 +76,7 @@
                         android:layout_marginTop="32dp"
                         android:drawableLeft="@drawable/baseline_local_phone_24"
                         android:text="Numéro :"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/cormorantgaramondregular"
                         android:textStyle="bold"
                         android:textColor="@color/lavender"
                         android:textSize="22sp" />
@@ -84,6 +85,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="+212 635 4477"
+                        android:fontFamily="@font/salsa"
                         android:textColor="@color/ciel"
                         android:textStyle="bold"
                         android:textSize="18sp" />
@@ -95,7 +97,7 @@
                         android:layout_marginTop="32dp"
                         android:drawableLeft="@drawable/baseline_email_24"
                         android:text="Email :"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/cormorantgaramondregular"
                         android:textStyle="bold"
                         android:textColor="@color/lavender"
                         android:textSize="22sp" />
@@ -104,7 +106,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="test@gmail.com"
-
+                        android:fontFamily="@font/salsa"
                         android:textStyle="bold"
                         android:textColor="@color/ciel"
                         android:textSize="18sp" />
