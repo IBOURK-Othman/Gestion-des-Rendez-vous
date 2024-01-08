@@ -68,7 +68,7 @@ public class SignupActivity extends AppCompatActivity {
                                         dbRef.child(user.getUid()).setValue(userClasse).addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
-                                                Toast.makeText( SignupActivity.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText( SignupActivity.this, "Vous vous êtes inscrit avec succès !", Toast.LENGTH_SHORT).show();
                                                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                                                 finish();
                                             }
@@ -80,7 +80,7 @@ public class SignupActivity extends AppCompatActivity {
                                 }
                             });
                 }else {
-                    Toast.makeText(SignupActivity.this, "Your Email or Password is Empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this, "Votre adresse e-mail ou votre mot de passe est vide", Toast.LENGTH_SHORT).show();
                 }
 
 

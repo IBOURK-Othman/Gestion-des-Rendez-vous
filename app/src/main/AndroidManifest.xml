@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GestiondesRendezvous"
         tools:targetApi="31">
         <activity
+            android:name=".AppointmentListActivity"
+            android:exported="false" />
+        <activity
             android:name=".ContactetNousActivity"
             android:exported="false" />
         <activity

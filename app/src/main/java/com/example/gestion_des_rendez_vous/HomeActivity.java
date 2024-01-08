@@ -21,7 +21,7 @@ import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button btn1,btn2,btn3;
+    Button btn1,btn2,btn3,btn4;
     TextView userName;
 
     @Override
@@ -46,14 +46,15 @@ public class HomeActivity extends AppCompatActivity {
             btn1=findViewById(R.id.btn1);
             btn2=findViewById(R.id.btn2);
             btn3=findViewById(R.id.btn3);
+            btn4=findViewById(R.id.btn4);
 
             getName();
 
             btn1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                Intent intent = new Intent(HomeActivity.this,specialite.class);
-//                startActivity(intent);
+             Intent intent = new Intent(HomeActivity.this,AppointmentListActivity.class);
+                startActivity(intent);
                 }
             });
 
@@ -73,12 +74,28 @@ public class HomeActivity extends AppCompatActivity {
                 }
             });
 
+            btn4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    logout();
+                }
+            });
+
         }
 
 
 
 
 
+
+    }
+    public void logout() {
+        FirebaseAuth.getInstance().signOut();
+        // Redirigez l'utilisateur vers l'écran de connexion ou l'écran d'accueil
+        Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
     }
 
 

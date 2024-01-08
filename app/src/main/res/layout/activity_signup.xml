@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="Inscription"
                 android:textAlignment="center"
                 android:textColor="@color/lavender"
                 android:textSize="36dp"
@@ -59,7 +59,7 @@
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Email"
-                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawableLeft="@drawable/baseline_email"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black" />
 
@@ -72,7 +72,7 @@
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
-                android:hint="Password"
+                android:hint="Mot de passe"
                 android:inputType="textPassword"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
@@ -83,7 +83,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Sign Up"
+                android:text="Inscription"
                 android:id="@+id/signup_button"
                 android:textSize="18sp"
                 android:background="@drawable/bg_button"
@@ -95,11 +95,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/loginRedirectText"
-                android:text="Already an user? Login"
+                android:text="Déjà un utilisateur ? Connectez-vous"
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="@color/lavender"/>
 
 

@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/pagebkg"
+
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
@@ -29,7 +30,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Se connecter"
+
                 android:textAlignment="center"
                 android:textColor="@color/lavender"
                 android:textSize="36dp"
@@ -58,7 +60,7 @@
                 android:background="@drawable/lavender_border"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
-                android:hint="Password"
+                android:hint="Mot de passe"
                 android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black" />
@@ -70,7 +72,7 @@
                 android:layout_margin="30dp"
                 android:background="@drawable/bg_button"
                 android:textColor="@color/white"
-                android:text="LOGIN"
+                android:text="connexion"
                 android:textSize="18sp" />
 
             <TextView
@@ -80,9 +82,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:padding="8dp"
-                android:text="Not yet registered? Sign up"
+                android:text="Pas encore inscrit ? Enregistrez-vous."
                 android:textColor="@color/lavender"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
 
         </LinearLayout>

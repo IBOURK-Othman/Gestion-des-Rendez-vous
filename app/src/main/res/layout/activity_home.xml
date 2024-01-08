@@ -21,15 +21,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@drawable/bg_ll"
+            android:layout_margin="10dp"
             android:padding="24dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="80sp"
                 android:fontFamily="monospace"
-                android:text="Welcome"
+                android:text="Bienvenue"
                 android:textStyle="bold"
-                android:textColor="@color/green"
+                android:textColor="@color/lavender"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginTop="16dp"/>
@@ -51,26 +53,26 @@
                 android:id="@+id/btn1"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:text="Spécialités"
+                android:text="Mes rendez-vous"
                 android:textSize="25sp"
                 android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_margin="8dp"
-                android:background="@drawable/bg_button"
+                android:background="@drawable/bgt_btn"
                 app:cornerRadius="10dp"/>
 
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:text="Médecins"
+                android:text="Réserver maintenant"
                 android:textSize="25sp"
                 android:textColor="@color/white"
                 android:fontFamily="monospace"
                 android:textStyle="bold"
-                android:layout_margin="10dp"
-                android:background="@drawable/bg_button"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgt_btn"
                 app:cornerRadius="10dp"/>
 
             <Button
@@ -83,22 +85,21 @@
                 android:textSize="25sp"
                 android:textColor="@color/white"
                 android:layout_margin="8dp"
-                android:background="@drawable/bg_button"
+                android:background="@drawable/bgt_btn"
                 app:cornerRadius="10dp"/>
 
             <!-- Add Logout Button -->
+
+
             <Button
-                android:id="@+id/btnLogout"
+                android:id="@+id/btn4"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:text="Logout"
-                android:fontFamily="monospace"
-                android:textStyle="bold"
-                android:textSize="25sp"
-                android:textColor="@color/white"
-                android:layout_margin="8dp"
+                android:layout_height="60dp"
+                android:layout_margin="30dp"
                 android:background="@drawable/bg_button"
-                app:cornerRadius="10dp"/>
+                android:textColor="@color/white"
+                android:text="Déconnexion"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

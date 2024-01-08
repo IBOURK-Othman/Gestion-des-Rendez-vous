@@ -99,12 +99,63 @@
         <TextView
             android:id="@+id/textViewAppointmentDetails"
             android:layout_width="match_parent"
+            android:textColor="@color/lavender"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TextView pour la date, l'intervalle de date et la remarque -->
+            <TextView
+                android:id="@+id/textViewCardDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_warning_amber_24"
+                android:fontFamily="monospace"
+                android:text="Important"
+                android:textColor="@color/rouge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCardDateImpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nous sommes à votre disposition du lundi au vendredi, de 9h00 à 12h00 et de 14h00 à 18h00 " />
+
+            <TextView
+                android:id="@+id/textViewCardDateInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Les réservations de rendez-vous à la clinique ne sont disponibles qu'aux heures suivantes:" />
+
+            <TextView
+                android:id="@+id/textViewCardRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9:00, 9:30, 10:00, 10:30, 11:00, 11:30, 14:00, 14:30, 15:00, 15:30, 16:00, 16:30, 17:00, 17:30." />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

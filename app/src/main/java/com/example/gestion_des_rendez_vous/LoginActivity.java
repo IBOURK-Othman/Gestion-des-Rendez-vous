@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!validateUsername() || !validatePassword()){
-                    Toast.makeText(LoginActivity.this, "Access Denied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Accès refusé.", Toast.LENGTH_SHORT).show();
                 }else
 
                 {
@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
     public Boolean validateUsername(){
         String val= loginEmail.getText().toString();
         if (val.isEmpty()){
-            loginEmail.setError("Username cannot be empty");
+            loginEmail.setError("Le nom d'utilisateur ne peut pas être vide.");
             return false;
         }else {
             loginEmail.setError(null);
@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
     public Boolean validatePassword(){
         String val= loginPassword.getText().toString();
         if (val.isEmpty()){
-            loginPassword.setError("Password cannot be empty");
+            loginPassword.setError("Le mot de passe ne peut pas être vide.");
             return false;
         }else {
             loginPassword.setError(null);
@@ -94,17 +94,17 @@ public class LoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
 
-                                Toast.makeText( getApplicationContext(), "You have sign in successfully!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText( getApplicationContext(), "Vous avez connecté avec succès !", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                                 finish();
 
                             }else {
-                                Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Votre adresse e-mail ou votre mot de passe est incorrect. ", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
         }else {
-            Toast.makeText(getApplicationContext(), "Your Email or Password is Empty", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Votre adresse e-mail ou votre mot de passe est vide", Toast.LENGTH_SHORT).show();
         }
 
 
