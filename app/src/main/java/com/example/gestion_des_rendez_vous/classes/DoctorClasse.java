@@ -3,7 +3,7 @@ package com.example.gestion_des_rendez_vous.classes;
 public class DoctorClasse {
 
     String id, nom, specialty;
-    boolean isAvailable;
+    boolean available;
 
     public DoctorClasse() {
     }
@@ -13,7 +13,7 @@ public class DoctorClasse {
     public DoctorClasse(String nom, String specialty, boolean availability) {
         this.nom = nom;
         this.specialty = specialty;
-        this.isAvailable = availability;
+        this.available = availability;
     }
 
     public String getId() {
@@ -40,10 +40,10 @@ public class DoctorClasse {
     }
 
     public boolean isAvailable() {
-        return isAvailable;
+        return available;
     }
 
     public void setAvailable(boolean available) {
-        isAvailable = available;
+        this.available = available;
     }
 }

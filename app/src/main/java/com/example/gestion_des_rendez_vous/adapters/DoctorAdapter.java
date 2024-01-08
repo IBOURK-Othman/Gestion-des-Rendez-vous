@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -40,13 +41,17 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.MyViewHold
         DoctorClasse doc = DoctorArrayList.get(position);
         holder.Nom.setText(doc.getNom());
         holder.specialty.setText(doc.getSpecialty());
-        String availability = doc.isAvailable() ? "" : "";
+        String availability = doc.isAvailable() ? "Disponible du Lundi au Vendredi" : "N'est pas disponible";
         holder.availability.setText(availability);
 
         holder.cardViewDoctor.setOnClickListener(v -> {
-            Intent intent = new Intent(context, AppointmentActivity.class);
-            intent.putExtra("doctorId", doc.getId());
-            context.startActivity(intent);
+            if(doc.isAvailable()){
+                Intent intent = new Intent(context, AppointmentActivity.class);
+                intent.putExtra("doctorId", doc.getId());
+                context.startActivity(intent);
+            }else {
+                Toast.makeText(context, "Ce docteur n'est pas disponible pour ce moment", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 

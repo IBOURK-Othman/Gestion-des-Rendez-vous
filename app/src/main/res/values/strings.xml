@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gestion-des-Rendez-vous</string>
+    <string name="app_name">Ma Clinique</string>
     <string name="date">date</string>
     <string name="description">description</string>
     <string name="time">time</string>
