@@ -73,6 +73,7 @@ public class AppointmentListActivity extends AppCompatActivity {
                             for (DocumentSnapshot document : task.getResult()) {
                                 // Convert Firestore document to AppointmentListClass
                                 AppointmentListClass appointment = document.toObject(AppointmentListClass.class);
+                                appointment.setAppointmentId(document.getId());
                                 getDoctorName(appointment);
 //                                appointmentArrayList.add(appointment);
                             }

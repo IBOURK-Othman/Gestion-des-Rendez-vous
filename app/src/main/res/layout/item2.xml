@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date"
+            android:fontFamily="@font/salsa"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -28,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Heure"
+            android:fontFamily="@font/salsa"
             android:textStyle="bold"
             android:textSize="16sp" />
 
@@ -36,7 +38,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Docteur"
+            android:fontFamily="@font/salsa"
             android:textStyle="bold"
             android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/imageCancel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:src="@drawable/baseline_cancel_24"
+            android:clickable="true"
+            android:onClick="onCancelClick"
+            android:layout_marginTop="8dp"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

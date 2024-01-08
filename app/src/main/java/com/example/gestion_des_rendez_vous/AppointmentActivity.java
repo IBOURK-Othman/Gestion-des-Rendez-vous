@@ -261,13 +261,13 @@ public class AppointmentActivity extends AppCompatActivity {
                 .addOnFailureListener(e -> {
                     // Failure: An error occurred while saving the appointment
                     // You can handle the error here
-                    Toast.makeText(this, "Error saving appointment", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Erreur lors de l'enregistrement du rendez-vous", Toast.LENGTH_SHORT).show();
                 });
     }
 
     // Method to show a message that the appointment is saved
     private void showAppointmentSavedMessage(String selectedDate, String selectedTime, String description) {
-        String message = "Appointment saved successfully!\nDate: " + selectedDate + "\nTime: " + selectedTime;
+        String message = "Rendez-vous enregistré avec succès !\nDate: " + selectedDate + "\nTime: " + selectedTime;
 
         // Show appointment details in TextView
         showAppointmentDetails(selectedDate, selectedTime, description);
@@ -300,7 +300,7 @@ public class AppointmentActivity extends AppCompatActivity {
 
     // Method to show appointment details in TextView
     private void showAppointmentDetails(String selectedDate, String selectedTime, String additionalInfo) {
-        String details = "Appointment Details:\nDate: " + selectedDate + "\nTime: " + selectedTime + "\n" + additionalInfo;
+        String details = "Détails du rendez-vous:\nDate: " + selectedDate + "\nTime: " + selectedTime + "\n" + additionalInfo;
         appointmentDetailsTextView.setText(details);
     }
 
